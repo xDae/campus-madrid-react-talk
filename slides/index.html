@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h3>Introducción a</h3>
+          <img src="images/React_logo_wordmark.png" class="react-logo"><br />
+          <img src="images/campus-logo.jpg" class="campus-logo">
+          <img src="images/osw-logo.svg" class="osw-logo">
+        </section>
+
+        <section>
+          <h3>🤓 Quien soy?</h3>
+          <h4 style="color: aquamarine">Jose Miguel Bejarano</h4>
+          <h6>UI/Frontend developer en</h6>
+
+          <img src="images/spotahome-logo--white.svg" alt=""><br>
+
+          <code>
+            <i class="fa fa-github" aria-hidden="true"></i> github.com/xDae <br>
+            <i class="fa fa-twitter" aria-hidden="true"></i> twitter.com/xDae
+          </code>
+        </section>
+
+        <section>
+          <h3>🛠 Qué vamos a hacer?</h3>
+          <img src="images/movies-app.png" style="max-width: 700px">
+        </section>
+
+        <section>
+          <!--<h3>Qué es React?</h3>-->
+          <img src="images/React_logo_wordmark.png" class="react-logo"><br>
+          <img src="images/es6-logo.png" alt="" style="max-width: 180px">
+          <img src="images/movie-db-logo.png" alt="">
+        </section>
+
+        <section>
+          <h3>❓ Qué es React?</h3>
+          <img src="./images/react-1.png" alt="">
+        </section>
+
+        <section>
+          <h3>📌 Conceptos</h3>
+          <ul>
+            <li class="fragment" data-fragment-index="0">JSX</li>
+            <li class="fragment" data-fragment-index="1">Componentes</li>
+            <li class="fragment" data-fragment-index="2">Propiedades</li>
+            <li class="fragment" data-fragment-index="3">Estado</li>
+            <li class="fragment" data-fragment-index="4">Eventos</li>
+            <li class="fragment" data-fragment-index="5">Métodos de ciclo de vida</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>👩🏻‍💻 Instalando React</h3>
+          <h6>Create React app</h6>
+          <span>Create React apps with no build configuration.</span>
+          <div class="fragment" data-placeholder-tag="span" data-fragment-index="0" style="background: dimgray; margin-bottom: 10px;">
+              <code>npm install -g create-react-app</code>
+          </div>
+          <div class="fragment" data-placeholder-tag="span" data-fragment-index="1" style="background: dimgray; margin-bottom: 10px;">
+              <code>create-react-app react-movies</code>
+          </div>
+          <div class="fragment" data-placeholder-tag="span" data-fragment-index="2" style="background: dimgray; margin-bottom: 10px;">
+              🚀 <code style="color: yellow">npm start</code>
+          </div>
+        </section>
+
+        <section>
+          <h3>🤷🏻‍♂️ JSX</h3>
+          <img src="./images/transpiled-component.png" class="fragment" data-fragment-index="0"></img>
+          <img src="./images/pure-component.png" class="fragment" data-fragment-index="1"></img>
+        </section>
+
+        <section>
+          <h3>🏗 Componentes</h3>
+          <span class="fragment" data-fragment-index="0">Los Componentes te permiten dividir la interfaz en piezas independientes y reutilizables, y pensar en cada pieza de forma aislada.</span>
+          <img class="fragment" data-fragment-index="1" src="./images/data-event-flow.png" alt="">
+        </section>
+
+        <section>
+          <img src="./images/movies-app-comps.png" alt="" style="max-width: 900px">
+        </section>
+
+        <section>
+          <h3>📞 Comunicación entre componentes</h3>
+          <img class="fragment" data-fragment-index="0" src="./images/parent-to-child.png" alt="" style="margin-right: 40px">
+          <img class="fragment" data-fragment-index="1" src="./images/child-to-parent.png" alt="" style="margin-right: 40px">
+          <img class="fragment" data-fragment-index="2" src="./images/sibling-to-sibling.png" alt="">
+        </section>
+
+        <section>
+          <h3>📥 Propiedades</h3>
+          <div class="fragment" data-fragment-index="0" style="margin-bottom: 50px">Son la configuración de un Componente (sus opciones). Son recibidos desde arriba y son inmutables en lo que respecta al Componente que los recibe.</div>
+          <h3>🛎 Eventos</h3>
+          <ul>
+            <li class="fragment" data-fragment-index="1">Synthetic Events <a href="https://facebook.github.io/react/docs/events.html" target="_blank">🔗</a></li>
+            <li class="fragment" data-fragment-index="2">Callback Functions</li>
+          </ul>
+
+
+        </section>
+
+        <section>
+          <h3>🚦 Estado</h3>
+          <span class="fragment" data-fragment-index="0">Es la representación visual actual de la aplicación en la pantalla. Un objeto que representa las partes de la aplicación que pueden cambiar. Cada componente puede mantener su propio estado.</span>
+        </section>
+
+        <section>
+          <h3>♻️ Ciclos de vida</h3>
+          <ul>
+            <li class="fragment" data-fragment-index="0">componentWillMount</li>
+            <li class="fragment" data-fragment-index="1">componentDidMount</li>
+            <li class="fragment" data-fragment-index="2">componentWillReceiveProps</li>
+            <li class="fragment" data-fragment-index="3">shouldComponentUpdate</li>
+            <li class="fragment" data-fragment-index="4">componentWillUpdate</li>
+            <li class="fragment" data-fragment-index="5">componentDidUpdate</li>
+            <li class="fragment" data-fragment-index="6">componentWillUnmount</li>
+          </ul>
+          <a href="https://www.tutorialspoint.com/reactjs/reactjs_component_life_cycle.htm" target="_blank">🔗</a>
+        </section>
+
+        <section>
+          <h3>➡️ y después que?</h3>
+          <ul>
+            <li class="fragment" data-fragment-index="0">📦 Redux</li>
+            <li class="fragment" data-fragment-index="1">🛣 React Router</li>
+            <li class="fragment" data-fragment-index="2">💅🏻 CSS Modules / styled-components</li>
+            <li class="fragment" data-fragment-index="3">🔧 HOC's</li>
+            <li class="fragment" data-fragment-index="4">🃏 Testing con Jest/Encyme</li>
+            <li class="fragment" data-fragment-index="5">🎛 Server Side Rendering</li>
+            <li class="fragment" data-fragment-index="6">📱 React Native</li>
+          </ul>
+        </section>
+
+        <section>
+          <img src="https://media.giphy.com/media/26BGM86XngBjKOqXu/source.gif" alt="">
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>
